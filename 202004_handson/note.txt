@@ -1,0 +1,122 @@
+
+LINE Developers
+LIFFスターターアプリを試してみる
+https://developers.line.biz/ja/docs/liff/trying-liff-app/
+
+おおまかな流れはREADME.mdに記載がある
+https://github.com/line/line-liff-v2-starter/blob/master/README.md
+
+If you want to develop a LIFF app using Heroku and Node.js, see Customize the app and deploy it on Heroku via the terminal
+
+
+
+0) 前提
+Git
+Node.js
+Herokuのアカウントを作成しておく
+
+1) 任意のディレクトリにcd
+
+2) まずGitHubのrepositoryをcloneする
+git clone https://github.com/line/line-liff-v2-starter
+
+3) cd into line-liff-v2-starter directory.
+cd line-liff-v2-starter
+
+4) npm install
+Node Package Managerの略でNode.jsのモジュールを管理するツール
+ルートディレクトリにあるpackage.jsonに記載されたパッケージなどが一括でインストールされる
+
+5) herokuにログイン
+heroku login
+ブラウザ経由？
+
+6) herokuでアプリを作成する
+無料で5つまで。クレジットカード登録したら増える
+アプリの名前は一意になるように。英小文字、数字、-のみ
+heroku create ldgq-handson-20200406-name
+LIFFの作成で必要になるので、
+https://{Heroku app name}.herokuapp.com
+を控えておく
+https://ldgq-handson-20200406-name.herokuapp.com
+
+7) ローカルのrepositoryを作ったherokuのアプリに渡す
+heroku git:remote -a ldgq-handson-20200406-name
+
+
+8) LINE Developers Consoleを開く
+https://developers.line.biz/console/
+
+9) プロバイダーを作成または既存のプロバイダーを選択
+
+10) チャネルをLINEログインで作成する
+チャネルアイコンは任意
+チャネル名、チャネル説明
+アプリタイプ・・・ウエブアプリ、ネイティブアプリをどちらもチェック
+メールアドレス
+同意
+※入力が完璧でないと作成ボタンが押せない
+
+11) LIFFの追加
+
+12) 基本情報
+LIFFアプリ名、サイズはTallにしておく
+エンドポイントURLには先程のherokuのURL
+Scopeは3つともチェック※すべて表示しないと見えないので注意
+ボットリンク機能はOn(Normal)
+→ログインした時に公式アカウントとしてfriendに追加できるボタンを表示
+https://developers.line.biz/en/docs/line-login/link-a-bot/#displaying-the-option-to-add-your-line-official-account-as-a-friend
+QRも試したいのであればONに。今日の所はOFFのまま
+
+13) シェアターゲットピッカーをONにしておく
+同意し、有効化
+※後ほど説明
+
+14) LIFF URLがわかるので、控えておく
+https://liff.line.me/1654043408-kEOMWWDQ
+最後の/以降がLIFFのID
+1654043408-kEOMWWDQ
+
+
+15) herokuに戻って、環境変数の設定
+heroku config:set MY_LIFF_ID={liffId}
+環境変数の値を確認したいときは、
+heroku config
+
+16) gitでherokuにpush
+git add .
+git commit -m "first commit"
+git push heroku master
+
+17) LIFF URLにアクセスしてみる
+ボタンがたくさんあるので、まずLog inして、色々押してみましょう
+
+（ここまでできれば今日はOKです。）
+
+18) package.jsonにライブラリを追加
+・body-parser
+npm install body-parser
+・date-utils
+npm install date-utils
+
+19) 別途作成されたアプリケーションのファイル一式を上書きコピーする
+
+20) gitでherokuにpush
+git add .
+git commit -m "deploy oekaki app"
+git push heroku master
+
+
+21) share target picker
+oekaki.js
+sendMessage()をshareTargetPicker()に変更
+
+22) gitでherokuにpush
+git add .
+git commit -m "change to use share target picker"
+git push heroku master
+
+
+
+LINEログインを公開にする必要はなくなった？？
+ボットリンク機能がいまいちよくわかっていない
