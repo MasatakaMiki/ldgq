@@ -1,0 +1,46 @@
+#closeWindowButton {
+  float: right;
+}
+
+#sendMessageButton {
+  padding: 2px 10px;
+}
+
+
+.div_canvas {
+  height: 70vh;
+  width: 98%;
+}
+
+.div_tools {
+  margin-top: 5px;
+  width: 100%;
+  text-align: center;
+}
+
+.div_button {
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
+}
+
+#canvas {
+  background: #ffffff;
+  border: 1px solid #aaaaaa;
+  height: 100%;
+  width: 100%;
+}
+
+input[type="image"] {
+  outline: none;
+  padding: 3px;
+}
+
+input[type="image"].active {
+  background-color: #81f781;
+  border: 1px solid #000000;
+}
+
+.div_tools input {
+  margin: 0 5px;
+}

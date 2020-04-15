@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>LIFFでお絵描き</title>
+        <meta name="description" content="LIFFでお絵描き">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="oekaki.css">
+    </head>
+    <body>
+        <div>
+<!-- LIFF自体に×ボタンがあるので
+            <button id="closeWindowButton" >×</button>
+-->
+            <div id="div_canvas" class="div_canvas">
+                <canvas id="canvas" width="700" height="500"></canvas><br>
+            </div>
+            <div class="div_tools">
+                <label>Color:<input id="color" type="color"></label>
+                <label>Weight:<input type="range" id="width" min="1" max="30" step="1" value="1" style="width:72px;" oninput="dispValue()">
+                <span id="width_value">1</span></label>
+                <input type="image" id="pencil" src="imgs/pencil.png" width="24px" class="active" onClick="changeTool(1)">
+                <input type="image" id="eraser" src="imgs/eraser.png" width="24px" onClick="changeTool(2)">
+            </div>
+            <div class="div_button">
+                <button id="clearButton">Clear</button>
+                <button id="sendMessageButton">Send</button>
+            </div>
+        </div>
+        <script src="vconsole.min.js"></script>
+        <script src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="oekaki.js"></script>
+    </body>
+</html>
