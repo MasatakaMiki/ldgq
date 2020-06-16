@@ -181,6 +181,7 @@ function completeTask(_e, _id, _task) {
                 if (!liff.isInClient()) {
                     // ブラウザからはliff.sendMessageは使えない
                     sendAlertIfNotInClient();
+                    getTodoList();
 /*
                     const hidden_userid = document.getElementById('hidden_userid').value;
                     const message = _task + " をやりました\n" + jsonResponse.updated;
@@ -199,7 +200,6 @@ function completeTask(_e, _id, _task) {
                                 throw new Error(jsonResponse.message);
                             }
                             getTodoList();
-                            //window.location.reload();
                         })
                         .catch(function(error) {
                             window.alert('Error sending a message: ' + error);
