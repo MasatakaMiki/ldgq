@@ -1,4 +1,4 @@
-const line = require('@line/bot-sdk');
+//const line = require('@line/bot-sdk');
 const express = require('express');
 const app = express();
 const port = process.env.PORT || 5000;
@@ -19,12 +19,14 @@ const db = knex({
     }
 });
 
+/*
 // LINE Bot
 const config = {
     channelSecret: process.env.CHANNEL_SECRET,
     channelAccessToken: process.env.CHANNEL_ACCESS_TOKEN,
 };
 const client = new line.Client(config);
+*/
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
@@ -82,23 +84,19 @@ app.post("/remove-task", (req, res) => {
         }).catch(err => res.status(400).json(err));
 });
 
+/*
 app.post('/send-message', (req, res) => {
     console.log(req.body);
     const { hidden_userid, message } = req.body;
 
     client.pushMessage(hidden_userid, {
         type: 'text',
-        text: message,
-        sender: {
-/*
-        name: "チャンピオン 三木",
-        iconUrl: "https://p62.f2.n0.cdn.getcloudapp.com/items/04uPNLeG/59UcuxelIy3u3Nc1584956046_1584956055.png?v=c586b91712e6400e8055dc46c7f30ac9",
-*/
-        }
+        text: message
     })
     .then(_=> {
         res.json("sent a message");
     }).catch(err => res.status(400).json(err));
 });
+*/
 
 app.listen(port, () => console.log(`app listening on port ${port}!`));

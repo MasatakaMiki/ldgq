@@ -180,8 +180,8 @@ function completeTask(_e, _id, _task) {
                 }
                 if (!liff.isInClient()) {
                     // ブラウザからはliff.sendMessageは使えない
-                    //sendAlertIfNotInClient();
-
+                    sendAlertIfNotInClient();
+/*
                     const hidden_userid = document.getElementById('hidden_userid').value;
                     const message = _task + " をやりました\n" + jsonResponse.updated;
                     fetch("/send-message",
@@ -204,7 +204,7 @@ function completeTask(_e, _id, _task) {
                         .catch(function(error) {
                             window.alert('Error sending a message: ' + error);
                         });
-
+*/
                 } else {
                     liff.sendMessages([{
                         'type': 'text',
@@ -212,7 +212,6 @@ function completeTask(_e, _id, _task) {
                     }]).then(function() {
                         //window.alert('Message sent');
                         getTodoList();
-                        //window.location.reload();
                     }).catch(function(error) {
                         window.alert('Error sending message: ' + error);
                     });
@@ -245,7 +244,6 @@ function removeTask(_e, _id, _task) {
                     // Error
                     throw new Error(jsonResponse.message);
                 }
-                //window.location.reload();
                 getTodoList();
             })
             .catch(function(error) {
