@@ -1,18 +1,18 @@
-[‹ãB]LDGQƒIƒ“ƒ‰ƒCƒ“ƒnƒ“ƒYƒIƒ“`LINE LIFF‚ÅDB˜AŒgƒAƒvƒŠ‚ð‚Â‚­‚Á‚Ä‚Ý‚æ‚¤
-ƒnƒ“ƒYƒIƒ“‚ð¬Œ÷‚É“±‚­ƒƒ‚
+[ä¹å·ž]LDGQã‚ªãƒ³ãƒ©ã‚¤ãƒ³ãƒãƒ³ã‚ºã‚ªãƒ³ï½žLINE LIFFã§DBé€£æºã‚¢ãƒ—ãƒªã‚’ã¤ãã£ã¦ã¿ã‚ˆã†
+â—Žãƒãƒ³ã‚ºã‚ªãƒ³ã‚’æˆåŠŸã«å°Žããƒ¡ãƒ¢â—Ž
 
-heroku ƒAƒvƒŠ–¼F
-heroku URLF
-LIFF URLF
-LIFF IDF
-ƒ`ƒƒƒlƒ‹ƒV[ƒNƒŒƒbƒgF
-ƒ†[ƒU[IDF
-ƒ`ƒƒƒlƒ‹ƒAƒNƒZƒXƒg[ƒNƒ“F
-PG HostF
-PG DatabaseF
-PG UserF
-PG PortF5432
-PG PasswordF
+heroku ã‚¢ãƒ—ãƒªåï¼š
+heroku URLï¼š
+LIFF URLï¼š
+LIFF IDï¼š
+ãƒãƒ£ãƒãƒ«ã‚·ãƒ¼ã‚¯ãƒ¬ãƒƒãƒˆï¼š
+ãƒ¦ãƒ¼ã‚¶ãƒ¼IDï¼š
+ãƒãƒ£ãƒãƒ«ã‚¢ã‚¯ã‚»ã‚¹ãƒˆãƒ¼ã‚¯ãƒ³ï¼š
+PG Hostï¼š
+PG Databaseï¼š
+PG Userï¼š
+PG Portï¼š5432
+PG Passwordï¼š
 
-¦uheroku ƒAƒvƒŠ–¼v‚Í‚Æ‚Ä‚àd—v‚Å‚·Bƒnƒ“ƒYƒIƒ“‚ªãŽè‚­‚¢‚©‚È‚¢ê‡A‚±‚ê‚Ì“ü—ÍŒë‚è‚âAÝ’è˜R‚ê‚Å“®‚©‚È‚¢ƒP[ƒX‚ª‘½‚¢‚Ì‚ÅA“Á‚É‚²’ˆÓ‚­‚¾‚³‚¢I
+â€»ã€Œheroku ã‚¢ãƒ—ãƒªåã€ã¯ã¨ã¦ã‚‚é‡è¦ã§ã™ã€‚ãƒãƒ³ã‚ºã‚ªãƒ³ãŒä¸Šæ‰‹ãã„ã‹ãªã„å ´åˆã€ã“ã‚Œã®å…¥åŠ›èª¤ã‚Šã‚„ã€è¨­å®šæ¼ã‚Œã§å‹•ã‹ãªã„ã‚±ãƒ¼ã‚¹ãŒå¤šã„ã®ã§ã€ç‰¹ã«ã”æ³¨æ„ãã ã•ã„ï¼
 
