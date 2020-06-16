@@ -1,0 +1,18 @@
+[九州]LDGQオンラインハンズオン～LINE LIFFでDB連携アプリをつくってみよう
+◎ハンズオンを成功に導くメモ◎
+
+heroku アプリ名：
+heroku URL：
+LIFF URL：
+LIFF ID：
+チャネルシークレット：
+ユーザーID：
+チャネルアクセストークン：
+PG Host：
+PG Database：
+PG User：
+PG Port：5432
+PG Password：
+
+※「heroku アプリ名」はとても重要です。ハンズオンが上手くいかない場合、これの入力誤りや、設定漏れで動かないケースが多いので、特にご注意ください！
+
