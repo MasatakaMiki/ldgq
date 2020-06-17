@@ -65,7 +65,8 @@ app.post("/add-task", (req, res) => {
 app.post("/complete-task", (req, res) => {
     console.log(req.body);
     const { id, hidden_userid } = req.body;
-    const nowTime = new Date();
+    const nowTime = new Date().toLocaleString("ja", {
+      	"year": "numeric", "month": "2-digit", "day": "2-digit", "hour": "2-digit", "minute": "2-digit", "second": "2-digit" });
     db("todolist").where({ id: id })
         .update({ status: 1, updated: nowTime })
         .then(_=> {
@@ -76,7 +77,8 @@ app.post("/complete-task", (req, res) => {
 app.post("/remove-task", (req, res) => {
     console.log(req.body);
     const { id, hidden_userid } = req.body;
-    const nowTime = new Date();
+    const nowTime = new Date().toLocaleString("ja", {
+      	"year": "numeric", "month": "2-digit", "day": "2-digit", "hour": "2-digit", "minute": "2-digit", "second": "2-digit" });
     db("todolist").where({ id: id })
         .del()
         .then(_=> {
