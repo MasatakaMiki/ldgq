@@ -1,0 +1,149 @@
+{
+  "type": "carousel",
+  "contents": [
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://2.bp.blogspot.com/-V6VfiVDMitg/WC5efOCqmFI/AAAAAAAA_5A/P97lsAxzB5kUDdJYLIz_DvdferdNRl6aACLcB/s400/food_hamburger_cheese.png",
+        "size": "full",
+        "aspectRatio": "1:1",
+        "aspectMode": "cover",
+        "action": {
+          "type": "uri",
+          "uri": "https://linecorp.com"
+        }
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "md",
+        "action": {
+          "type": "uri",
+          "uri": "https://linecorp.com"
+        },
+        "contents": [
+          {
+            "type": "text",
+            "text": "チーズバーガー",
+            "size": "xl",
+            "weight": "bold"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "text",
+                "text": "￥500",
+                "weight": "bold",
+                "margin": "sm"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "商品の説明",
+            "wrap": true,
+            "color": "#aaaaaa",
+            "size": "xxs"
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "spacer",
+            "size": "xxl"
+          },
+          {
+            "type": "button",
+            "style": "primary",
+            "color": "#905c44",
+            "action": {
+              "type": "postback",
+              "label": "注文する",
+              "data": "type=select&item=001",
+              "displayText": "チーズバーガー"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://1.bp.blogspot.com/-ccmRa-W5FdQ/WGnPWhQSnzI/AAAAAAABA4w/krKcel6z1hobC87K1Vj9bG_Me_AfBo15QCLcB/s400/hamburger_teriyaki_burger.png",
+        "size": "full",
+        "aspectRatio": "1:1",
+        "aspectMode": "cover",
+        "action": {
+          "type": "uri",
+          "uri": "https://linecorp.com"
+        }
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "md",
+        "action": {
+          "type": "uri",
+          "uri": "https://linecorp.com"
+        },
+        "contents": [
+          {
+            "type": "text",
+            "text": "テリヤキバーガー",
+            "size": "xl",
+            "weight": "bold"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "text",
+                "text": "￥600",
+                "weight": "bold",
+                "margin": "sm"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "商品の説明",
+            "wrap": true,
+            "color": "#aaaaaa",
+            "size": "xxs"
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "spacer",
+            "size": "xxl"
+          },
+          {
+            "type": "button",
+            "style": "primary",
+            "color": "#905c44",
+            "action": {
+              "type": "postback",
+              "label": "注文する",
+              "data": "type=select&item=002",
+              "displayText": "テリヤキバーガー"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

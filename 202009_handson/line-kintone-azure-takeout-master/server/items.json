@@ -1,0 +1,16 @@
+[
+  {
+    "id": "001",
+    "name": "チーズバーガー",
+    "description": "大きなトマトとレタスの入ったチーズバーガー",
+    "image": "https://2.bp.blogspot.com/-V6VfiVDMitg/WC5efOCqmFI/AAAAAAAA_5A/P97lsAxzB5kUDdJYLIz_DvdferdNRl6aACLcB/s400/food_hamburger_cheese.png",
+    "unitPrice": 500
+  },
+  {
+    "id": "002",
+    "name": "テリヤキバーガー",
+    "description": "照り焼きハンバーグとレタスとマヨネーズが魅力のテリヤキバーガー",
+    "image": "https://1.bp.blogspot.com/-ccmRa-W5FdQ/WGnPWhQSnzI/AAAAAAABA4w/krKcel6z1hobC87K1Vj9bG_Me_AfBo15QCLcB/s400/hamburger_teriyaki_burger.png",
+    "unitPrice": 600
+  }
+]
